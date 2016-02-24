@@ -1,0 +1,15 @@
+<ion-view view-title="Teams">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="team in teams">
+                <a href="#/app/team/{{team.id}}" class="item item-thumbnail-left">
+                    <img ng-src="{{(team.code!='free-agents')?('http://i.cdn.turner.com/nba/nba/.element/img/1.0/logos/teamlogos_80x64/'+team.code+'.gif'):'https://placeholdit.imgix.net/~text?txtsize=10&bg=ffffff&txtclr=ffffff&txt=80%C3%9764&w=80&h=6'}}" onerror="this.src = 'https://placeholdit.imgix.net/~text?txtsize=10&bg=ffffff&txtclr=ffffff&txt=80%C3%9764&w=80&h=64">
+                    <h2>{{team.city}}</h2>
+                    <h4>{{team.name}}</h4>
+                </a>
+                <button ng-click="openTeamUrl(team.code)" target="_blank" class="item text-center"> <h4>Team Site</h4>
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

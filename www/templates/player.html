@@ -1,0 +1,26 @@
+<ion-view ng-show="stats" view-title="{{stats[0][1]}}">
+    <ion-content>
+        <img ng-src="http://stats.nba.com/media/players/230x185/{{stats[0][0]}}.png" onerror="this.src = 'http://placehold.it/80x80/000000/000000">
+        <h2><b>{{stats[0][1]}}</b></h2>
+        <h3><b>Career Average</b></h3>
+        <h4><b>Minutes: </b>{{stats[0][2]}}</h4>
+        <h4><b>Field goals made: </b>{{stats[0][3]}}</h4>
+        <h4><b>Field goals attempted: </b>{{stats[0][4]}}</h4>
+        <h4><b>Field goal (%): </b>{{stats[0][5]}}</h4>
+        <h4><b>Three-point field goal made: </b>{{stats[0][6]}}</h4>
+        <h4><b>Three-point field goal attempted: </b>{{stats[0][7]}}</h4>
+        <h4><b>Three-point field goal (%): </b>{{stats[0][8]}}</h4>
+        <h4><b>Free trows made: </b>{{stats[0][9]}}</h4>
+        <h4><b>Free throws attempted: </b>{{stats[0][10]}}</h4>
+        <h4><b>Free throws (%): </b>{{stats[0][11]}}</h4>
+        <h4><b>Offensive rebounds: </b>{{stats[0][12]}}</h4>
+        <h4><b>Defensive rebounds: </b>{{stats[0][13]}}</h4>
+        <h4><b>Rebounds: </b>{{stats[0][14]}}</h4>
+        <h4><b>Assists: </b>{{stats[0][15]}}</h4>
+        <h4><b>Turnovers: </b>{{stats[0][16]}}</h4>
+        <h4><b>Steals: </b>{{stats[0][17]}}</h4>
+        <h4><b>Blocks: </b>{{stats[0][18]}}</h4>
+        <h4><b>Personal Fouls: </b>{{stats[0][19]}}</h4>
+        <h4><b>Points: </b>{{stats[0][20]}}</h4>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,13 @@
+<ion-view view-title="{{players[0][8] +' '+ players[0][9]}}">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="player in players" class="">
+                <a  href="#/app/player/{{player[0]}}">
+                <img ng-src="http://i.cdn.turner.com/nba/nba/.element/img/2.0/sect/statscube/players/large/{{player[6]}}.png" onerror="this.src = 'http://placehold.it/80x80/000000/000000">
+                <h2><b>{{player[2]}}</b></h2>
+                <h4>Seasons: <b>{{player[4]}}-{{player[5]}}</b></h4>
+                </a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
